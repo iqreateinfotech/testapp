@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [UQ Suite]" parallel="none">
+  <test name="All UQLoginCases(failed)" parallel="none">
+    <classes>
+      <class name="uqmoduletestcases.UQLoginCases">
+        <methods>
+          <include name="verifyAllLoginCases"/>
+        </methods>
+      </class> <!-- uqmoduletestcases.UQLoginCases -->
+    </classes>
+  </test> <!-- All UQLoginCases(failed) -->
+</suite> <!-- Failed suite [UQ Suite] -->

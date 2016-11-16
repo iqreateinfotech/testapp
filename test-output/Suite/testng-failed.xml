@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Uniqreate Modulewise TestCases(failed)" parallel="none">
+    <classes>
+      <class name="uqmoduletestcases.UQDeckShareCases">
+        <methods>
+          <include name="verifyAllDeckShareCases"/>
+        </methods>
+      </class> <!-- uqmoduletestcases.UQDeckShareCases -->
+    </classes>
+  </test> <!-- Uniqreate Modulewise TestCases(failed) -->
+</suite> <!-- Failed suite [Suite] -->

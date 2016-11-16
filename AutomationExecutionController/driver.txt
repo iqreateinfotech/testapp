@@ -1,0 +1,6 @@
+  # gstrRootFolderPath =  "D:\LASTMILE\LM_TestAutomationSuite_17July" #
+        gstrRootFolderPath =  "/home/muthu/work/Selenium/SeleniumUQ/"
+        Call EnvironmentConfiguration (gstrRootFolderPath)
+        Call ExecuteTestSuite (dobjFilePaths("TestSuiteFilePath"))
+
+ 

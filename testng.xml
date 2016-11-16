@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UQ Suite" parallel="none">
+  <test name="Uniqreate Modulewise TestCases">
+    <classes>
+    
+      <class name="uqmoduletestcases.UQRegistrationCases">
+      
+			      <methods>
+							<include name="verifyNewRegistration" />
+							<include name="verifyAlreadyUsedEmail" />
+							<include name="verifyMismatchPassword_ConfirmPassword" />
+							<include name="emptyPassword" />
+							<include name="allFieldsEmpty" />
+							<include name="verifyEmailFormat" />
+							<!--<exclude name="testMakeOrder" /> -->
+				  </methods>
+		</class>
+	
+				
+      <class name="uqmoduletestcases.UQLoginCases">
+       			 <methods>
+							<include name="successLogin" />
+							<include name="incorrectPassword" />
+					    	<include name="incorrectEmail" />
+				</methods>
+		</class>
+		
+      <class name="uqmoduletestcases.UQForgotPasswordCases">
+      
+      			<methods>
+							<include name="verifyResetPassword" />
+							<include name="verifyEmptyResetpass" />
+							<include name="verifyIncorrectEmail" />
+							<include name="verifyInvalidEmailFormat" />
+							<include name="verifyWithMultiValidEmail" />
+							
+				</methods>
+		</class>
+      
+      <class name="uqmoduletestcases.UQCreateDeckCases">
+      			<methods>
+							<include name="verifyNewDeckCreationWithIdeadeskAdmin" />
+							<include name="verifyNewDeckCreationWithIdeadeskFinance" />
+							<include name="verifyNewDeckCreationWithIdeadeskPersonal" />
+							<include name="verifyNewDeckCreationWithIdeadeskOperations" />
+							<include name="verifyNewDeckCreationWithIdeadeskRnD" />
+							<include name="verifyNewDeckCreationWithIdeadeskWithoutImage" />
+							<include name="verifyNewDeckCreationWithIdeadeskWithoutImagenColor" />
+							<include name="verifyNewDeckCreationWithIdeadeskWithoutImagenColorEmail" />
+							<include name="verifyNewDeckCreationWithoutDeckName" />
+							<include name="verifyNewDeckCreationWithoutIdeaDeskType" />
+							<include name="verifyNewDeckCreationWithBiggerDeckName" />
+							<include name="verifyIdeaskType" />
+				</methods>
+		</class>
+      <class name="uqmoduletestcases.DeckDeleteCases">
+      
+      			<methods>
+							<include name="VerifyDeckCreationDeletion_Database" />
+												
+				</methods>
+		</class>
+		
+      <class name="uqmoduletestcases.UQDeckShareCases">
+     			<methods>
+							<include name="verifySendInviteNonUQPeople" />
+							<include name="verifySendMultipleInviteNonUQPeople" />
+							<include name="verifyShareDeckWithoutEmailID" />
+							<include name="verifySharedeckWithPeopleWhoAreMembers" />
+						
+							
+				</methods>
+      </class>
+      
+      <class name="uqmoduletestcases.MultipleFileUploadCases">
+                  <methods>
+                 			 <include name="verifyMultiFileUpload" />
+                  </methods>
+                  
+       </class>    
+              
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite --> 

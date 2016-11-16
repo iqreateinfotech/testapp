@@ -1,0 +1,54 @@
+java -jar extentmerge.jar -db "/home/muthu/work/Selenium/SeleniumUQ/Reports/Extent.db" -out "/home/muthu/work/Selenium/SeleniumUQ/Reports/ExtentMerge.html"
+
+
+java -jar extentmerge.jar -dir "/home/muthu/work/Selenium/SeleniumUQ/Reports/" -out "extent.html" -css-file "css.css"
+
+....................................................................................................................
+
+
+Directory
+
+ExtentMerge can consume an entire directory and scan for all resources that are valid Extent.html or Extent.db. To use a directory as input, use the below command:
+
+
+java -jar extentmerge.jar -dir "C:\MyDirectory" -out "C:\MyDirectory\ExtentMerge.html"
+HTML File
+
+To merge multiple HTML files, use the below command:
+
+
+java -jar extentmerge.jar -html "C:\MyDirectory\Report1.html" -html "C:\MyDirectory\Report2.html" -out "C:\MyDirectory\ExtentMerge.html"
+Database
+
+To merge one or many databases, use the below command:
+
+
+java -jar extentmerge.jar -db "C:\MyDirectory\Extent.db" -out "C:\MyDirectory\ExtentMerge.html"
+Merging Reports Between 2 Dates
+
+To merge reports from any source between multiple dates, simply specify the start-date and end-date. Note: you must use the following format for dates: "yyyy-MM-dd HH:mm:ss".
+
+
+java -jar extentmerge.jar -dir "locataion" -out "extent.html" -from "2015-10-02 00:00:00" -to "2015-10-05 23:59:59"
+Multiple Sources
+
+It is possible to use multiple input sources as well. ExtentMerge will scan all resources for valid information to build the merged report.
+
+
+java -jar extentmerge.jar -dir "location" -html "input.html" -db "extent.db" -out "extent.html"
+Customization
+
+It is also possible to customize the final report with your custom CSS and JS.
+
+
+// custom css file
+java -jar extentmerge.jar -dir "location" -out "extent.html" -css-file "css.css"
+
+// custom inline css
+java -jar extentmerge.jar -dir "location" -out "extent.html" -css ".tag { display: none; }"
+
+// custom js file
+java -jar extentmerge.jar -dir "location" -out "extent.html" -js-file "script.js"
+
+// custom inline js
+java -jar extentmerge.jar -dir "location" -out "extent.html" -js "$(document).ready(function() { alert('hello world'); });"

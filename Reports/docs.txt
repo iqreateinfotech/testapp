@@ -1,0 +1,3 @@
+Refer to the following link for docs and usage examples:
+
+http://extentreports.relevantcodes.com/extentmerge/docs.html
